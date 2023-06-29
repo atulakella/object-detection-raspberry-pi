@@ -4,3 +4,4 @@ sudo apt-get -y install libxvidcore-dev libx264-dev
 sudo apt-get -y install qt4-dev-tools 
 sudo apt-get -y install libatlas-base-dev
 pip3 install opencv-python==3.4.11.41
+pip install RPi.GPIO
