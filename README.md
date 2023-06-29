@@ -80,4 +80,4 @@ From the `/home/pi/rpiod` directory, activate the `rpiod-env` environment (check
 ```
   python3 webcam.py --modeldir=Sample_TFLite_model
 ```
-I've developed this code to trigger the activation of an LED connected to GPIO 18 whenever a person is detected. However, feel free to modify the code to trigger any other action or device based on the detection. Let your imagination run wild and customize it to suit your needs!
+###I've developed this code to trigger the activation of an LED connected to GPIO 18 whenever a person is detected. However, feel free to modify the code to trigger any other action or device based on the detection. Let your imagination run wild and customize it to suit your needs!
