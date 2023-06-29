@@ -56,3 +56,28 @@ To run the script effortlessly, execute the following command:
 ```
   bash requirements.sh
 ```
+
+The provided shell script will download approximately 400MB of installation files, which may take some time. If you encounter an error, try rerunning the command a few times, as it may be due to a temporary issue with your internet connection or corrupted package data. 
+The shell script automatically installs the latest version of TensorFlow. Here I'm using a sample TFLite model provided by Google
+
+
+To utilize a sample quantized SSDLite-MobileNet-v2 object detection model provided by Google, which is trained on the MSCOCO dataset and converted for TensorFlow Lite, you can download it from the Object Detection page on the official TensorFlow website. 
+Please execute the following command to download the sample model:
+```
+  wget https://storage.googleapis.com/download.tensorflow.org/models/tflite/coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip
+```
+
+To unzip the downloaded file and extract its contents into a folder named "Sample_TFLite_model," use the following command. The command will automatically create the folder for you.
+```
+  unzip coco_ssd_mobilenet_v1_1.0_quant_2018_06_29.zip -d Sample_TFLite_model
+```
+
+Hold tight! The sample model is armed with object-detection awesomeness.
+
+Get ready for some TFLite object detection action! To optimize performance, close any unused applications and ensure your webcam or Picamera is connected.
+
+From the `/home/pi/rpiod` directory, activate the `rpiod-env` environment (check for `(rpiod-env)` in the command prompt). Then, execute the command to run the real-time webcam detection script. The script, `webcam.py`, is compatible with both Picamera and USB webcams. Using the folling command you can do the same
+```
+  python3 webcam.py --modeldir=Sample_TFLite_model
+```
+I've developed this code to trigger the activation of an LED connected to GPIO 18 whenever a person is detected. However, feel free to modify the code to trigger any other action or device based on the detection. Let your imagination run wild and customize it to suit your needs!
