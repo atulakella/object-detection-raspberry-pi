@@ -31,6 +31,12 @@ Clone this repository:
 ```
    git clone https://github.com/atulakella/object-detection-raspberry-pi
 ```
+This downloads everything into a folder called object-detection-raspberry-pi. Let's rename the folder to "rpiod" and then cd into it:
+```
+   mv object-detection-raspberry-pi rpiod
+   cd rpiod
+```
+For the rest of the project we'll be working in this directory.
 
 To ensure compatibility and avoid version conflicts with existing package libraries on your Raspberry Pi, this project utilizes a virtual environment. By keeping TensorFlow installed within its own environment, it safeguards against overriding any previous TensorFlow installations if any. 
 ```
