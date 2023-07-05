@@ -1,6 +1,8 @@
 # object-detection-raspberry-pi
 Object Detection with Raspberry Pi and TensorFlow Lite. Real-time detection and classification of objects using Google's pre-trained model. Trigger actions based on detected objects. An accessible and versatile solution for applications such as home automation, security systems, and robotics.
 
+![image](https://github.com/atulakella/object-detection-raspberry-pi/assets/44159259/6f70101b-6bc0-49e6-a1a5-b0ab6d022a8d) 
+
 # Object Detection with Raspberry Pi and TensorFlow Lite
 
 This repository contains code and resources for an object detection project using Raspberry Pi, TensorFlow Lite, and Google's object detection model.
@@ -20,7 +22,8 @@ The object detection system implemented in this project utilizes a Raspberry Pi 
 ### Prerequisites
 
 - Raspberry Pi
-- TensorFlow Lite 
+- TensorFlow Lite
+- Pi Camera or a USB Webcam
 - Python 
 - Any actuator, led or a buzzer which you want to trigger
 
@@ -86,4 +89,8 @@ From the `/home/pi/rpiod` directory, activate the `rpiod-env` environment (check
 ```
   python3 webcam.py --modeldir=Sample_TFLite_model
 ```
+![image](https://github.com/atulakella/object-detection-raspberry-pi/assets/44159259/9189d6f8-f5fe-4ad7-b34f-ec76876d5cb3) 
+![image](https://github.com/atulakella/object-detection-raspberry-pi/assets/44159259/ec1ca3a8-936c-4bb0-93e0-a5be782dae8a) 
+![image](https://github.com/atulakella/object-detection-raspberry-pi/assets/44159259/2f1231e7-7071-43d4-9dbc-a82784f288b9)
+
 ### I've developed this code to trigger the activation of an LED connected to GPIO 18 whenever a person is detected. However, feel free to modify the code to trigger any other action or device based on the detection. Let your imagination run wild and customize it to suit your needs!
