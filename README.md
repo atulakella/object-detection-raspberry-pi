@@ -32,7 +32,7 @@ The object detection system implemented in this project utilizes a Raspberry Pi 
 Clone this repository:
 
 ```
-   git clone https://github.com/atulakella/object-detection-raspberry-pi
+   [git clone https://github.com/atulakella/object-detection-raspberry-pi](https://github.com/atulakella/object-detection-raspberry-pi.git)
 ```
 This downloads everything into a folder called object-detection-raspberry-pi. Let's rename the folder to "rpiod" and then cd into it:
 ```
